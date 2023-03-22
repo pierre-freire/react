@@ -134,10 +134,10 @@ const CityCard = ({ city, clearCity }) => {
         <li>Humidade <b>{city.daysHumidity['0'][parseInt(todayHour, 10)]}%</b></li>
       </ul>
       <ol className='city-card--next-days'>
-        <li><b>{dayName(1)}<br /><span className='card--next-days__temp'>{temperatureTreated(city.daysTemp['1'], 'min')}º {temperatureTreated(city.daysTemp['1'], 'max')}º</span></b></li>
-        <li><b>{dayName(2)}<br /><span className='card--next-days__temp'>{temperatureTreated(city.daysTemp['2'], 'min')}º {temperatureTreated(city.daysTemp['2'], 'max')}º</span></b></li>
-        <li><b>{dayName(3)}<br /><span className='card--next-days__temp'>{temperatureTreated(city.daysTemp['3'], 'min')}º {temperatureTreated(city.daysTemp['3'], 'max')}º</span></b></li>
-        <li><b>{dayName(4)}<br /><span className='card--next-days__temp'>{temperatureTreated(city.daysTemp['4'], 'min')}º {temperatureTreated(city.daysTemp['4'], 'max')}º</span></b></li>
+        <li><b>{dayName(1)}<br /><span className='card--next-days__temp'>{temperatureTreated(city.daysTemp['1'], 'min')}º{temperatureTreated(city.daysTemp['1'], 'max')}º</span></b></li>
+        <li><b>{dayName(2)}<br /><span className='card--next-days__temp'>{temperatureTreated(city.daysTemp['2'], 'min')}º{temperatureTreated(city.daysTemp['2'], 'max')}º</span></b></li>
+        <li><b>{dayName(3)}<br /><span className='card--next-days__temp'>{temperatureTreated(city.daysTemp['3'], 'min')}º{temperatureTreated(city.daysTemp['3'], 'max')}º</span></b></li>
+        <li><b>{dayName(4)}<br /><span className='card--next-days__temp'>{temperatureTreated(city.daysTemp['4'], 'min')}º{temperatureTreated(city.daysTemp['4'], 'max')}º</span></b></li>
         <li className='city-card--vanish-day'><b>{dayName(5)}<br /><span className='card--next-days__temp'>{temperatureTreated(city.daysTemp['5'], 'min')}º {temperatureTreated(city.daysTemp['5'], 'max')}º</span></b></li>
       </ol>
     </section>
